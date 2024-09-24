@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- nav section-->
+      <div class="navsection">
+        <div class="navbar">
+          <h2>Title</h2>
+          <nav>
+            <a href="">Home</a>
+            <a href="">Services</a>
+            <a href="">About Us</a>
+            <a href="">Contact Us</a>
+          </nav>
+
+          <button class="login">Login</button>
+
+          <div id="showMobileNav" class="menu">
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+            <div class="menu-item"></div>
+          </div>
+        </div>
+      </div>
+      <div class="mobilenav">
+        <div class="hideIcon">
+          <button id="hideMobileNav" class="login">X</button>
+        </div>
+        <a href="">Home</a>
+        <a href="">Services</a>
+        <a href="">About Us</a>
+        <a href="">Contact Us</a>
+
+        <div><button class="login">Login</button></div>
+      </div>
+      <!-- hero section-->
+      <div class="herosection">
+        <img
+          class=""
+          src="https://img.freepik.com/free-photo/wet-sphere-reflective-water-abstract-beauty-generated-by-ai_188544-19616.jpg"
+          alt=""
+        />
+        <p class="title">Hero title</p>
+      </div>
+
+      <!-- card section-->
+
+      <div class="productshow">
+        <p class="producttitle">Popular Product</p>
+        <div class="productgrid">
+          <div class="product-card">
+            <img
+              class=""
+              src="https://img.freepik.com/free-photo/wet-sphere-reflective-water-abstract-beauty-generated-by-ai_188544-19616.jpg"
+              alt=""
+            />
+            <p class="">Title</p>
+            <article class="">
+              this is the first product this is the first product this is the
+              first product this is the first product
+            </article>
+          </div>
+          <div class="product-card">
+            <img
+              class=""
+              src="https://img.freepik.com/free-photo/wet-sphere-reflective-water-abstract-beauty-generated-by-ai_188544-19616.jpg"
+              alt=""
+            />
+            <p class="">Title</p>
+            <article class="">
+              this is the first product this is the first product this is the
+              first product this is the first product
+            </article>
+          </div>
+          <div class="product-card">
+            <img
+              class=""
+              src="https://img.freepik.com/free-photo/wet-sphere-reflective-water-abstract-beauty-generated-by-ai_188544-19616.jpg"
+              alt=""
+            />
+            <p class="">Title</p>
+            <article class="">
+              this is the first product this is the first product this is the
+              first product this is the first product
+            </article>
+          </div>
+          <div class="product-card">
+            <img
+              class=""
+              src="https://img.freepik.com/free-photo/wet-sphere-reflective-water-abstract-beauty-generated-by-ai_188544-19616.jpg"
+              alt=""
+            />
+            <p class="">Title</p>
+            <article class="">
+              this is the first product this is the first product this is the
+              first product this is the first product
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document
+        .getElementById("showMobileNav")
+        .addEventListener("click", function () {
+          const mobileNav = document.querySelector(".mobilenav");
+
+          if (
+            mobileNav.style.display === "none" ||
+            mobileNav.style.display === ""
+          ) {
+            mobileNav.style.display = "flex"; // Show the mobile navigation
+          } else {
+            mobileNav.style.display = "none"; // Hide the mobile navigation
+          }
+        });
+
+      document
+        .getElementById("hideMobileNav")
+        .addEventListener("click", function () {
+          const mobileNav = (document.querySelector(
+            ".mobilenav"
+          ).style.display = "none");
+        });
+    </script>
+  </body>
+</html>
